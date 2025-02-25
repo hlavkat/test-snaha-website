@@ -6,7 +6,7 @@
 
 	let width = $state(0)
 	const isMobile = $derived(width < 920)
-	const notImplemented = '#notImplemented'
+	const notImplemented = '/'
 
 	const companies = [
 		{ name: 'Prezi', icon: '/icons/prezi.svg', link: notImplemented },
