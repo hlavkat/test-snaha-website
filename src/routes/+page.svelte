@@ -54,7 +54,7 @@
 		>
 	</div>
 	{#if !isMobile}
-		<img src="/header-img.png" alt="Header" />
+		<img src={`${base}/header-img.png`} alt="Header" />
 	{/if}
 </section>
 <Divider --double-padding="0" />
