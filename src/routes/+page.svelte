@@ -9,28 +9,28 @@
 	const notImplemented = '/'
 
 	const companies = [
-		{ name: 'Prezi', icon: '/icons/prezi.svg', link: notImplemented },
-		{ name: 'Felfele', icon: '/icons/felfele.svg', link: notImplemented },
-		{ name: 'Swarm', icon: '/icons/swarm.svg', link: notImplemented },
-		{ name: 'Logos', icon: '/icons/logos.svg', link: notImplemented },
-		{ name: 'Kalkul', icon: '/icons/kalkul.svg', link: 'https://kalkul.app/' },
-		{ name: 'Diete', icon: '/icons/diete.svg', link: 'https://diete.design/' }
+		{ name: 'Prezi', icon: '%sveltekit.assets%/icons/prezi.svg', link: notImplemented },
+		{ name: 'Felfele', icon: '%sveltekit.assets%/icons/felfele.svg', link: notImplemented },
+		{ name: 'Swarm', icon: '%sveltekit.assets%/icons/swarm.svg', link: notImplemented },
+		{ name: 'Logos', icon: '%sveltekit.assets%/icons/logos.svg', link: notImplemented },
+		{ name: 'Kalkul', icon: '%sveltekit.assets%/icons/kalkul.svg', link: 'https://kalkul.app/' },
+		{ name: 'Diete', icon: '%sveltekit.assets%/icons/diete.svg', link: 'https://diete.design/' }
 	]
 
 	const coreTeam = [
 		{
 			name: 'Attila',
-			img: '/team/attila.png',
+			img: '%sveltekit.assets%/team/attila.png',
 			info: 'Shabby chic enamel pin raclette authentic letterpress, selfies cold-pressed. Ascot adaptogen sus, intelligentsia fingerstache offal food truck narwhal hashtag occupy big mood etsy seitan austin.'
 		},
 		{
 			name: 'David',
-			img: '/team/david.png',
+			img: '%sveltekit.assets%/team/david.png',
 			info: "Put a bird on it man bun freegan semiotics edison bulb unicorn celiac cloud bread grailed you probably haven't heard of them street art shoreditch iPhone. Kinfolk locavore banh mi gluten-free irony trust fund."
 		},
 		{
 			name: 'Vojtech',
-			img: '/team/vojtech.png',
+			img: '%sveltekit.assets%/team/vojtech.png',
 			info: 'Tumblr freegan poke, poutine pug bespoke tacos pour-over cliche normcore selvage. XOXO cray hammock post-ironic, aesthetic typewriter umami. Shaman farm-to-table biodiesel kombucha kinfolk.'
 		}
 	]
