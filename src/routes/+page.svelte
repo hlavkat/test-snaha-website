@@ -40,9 +40,9 @@
 <svelte:window bind:innerWidth={width} />
 <section class="header">
 	<div class="left">
-		<img src="/logo.png" alt="Logo" class="logo" />
+		<img src={`${base}/logo.png`} alt="Logo" class="logo" />
 		{#if isMobile}
-			<img src="/header-img.png" alt="Header" />
+			<img src={`${base}/header-img.png`} alt="Header" />
 		{/if}
 		<Typography variant={isMobile ? 'default' : 'h3'} class="normal block"
 			><span class="yellow">We turn worthy ideas into products.</span><br />
