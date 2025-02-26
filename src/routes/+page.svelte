@@ -193,7 +193,6 @@
 		<div class="grower"></div>
 	{/if}
 	<Typography class="high end">{new Date().getFullYear()}</Typography>
-	Test
 </footer>
 
 <style>
