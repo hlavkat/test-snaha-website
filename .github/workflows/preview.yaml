@@ -48,5 +48,5 @@ jobs:
       - name: Deploy PR preview
         uses: rossjrw/pr-preview-action@v1
         with:
-          source-dir: build/
+          source-dir: ./build/
           action: auto
