@@ -12,6 +12,7 @@ concurrency: preview-${{ github.ref }}
 
 permissions:
   contents: write
+  pull-requests: write
   pages: write
   id-token: write
 
@@ -49,4 +50,3 @@ jobs:
         uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: ./build/
-          action: auto
