@@ -27,7 +27,6 @@ jobs:
           version: 10
 
       - name: Cache node modules
-        if: github.event.action != 'closed'
         id: cache-nodemodules
         uses: actions/cache@v4
         env:
@@ -40,6 +39,7 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
       - name: Install Dependencies
+        if: github.event.action != 'closed'
         if: steps.cache-nodemodules.outputs.cache-hit != 'true'
         run: pnpm install --frozen-lockfile
 
