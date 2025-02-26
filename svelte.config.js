@@ -9,5 +9,6 @@ export default {
 			precompress: false,
 			strict: true
 		}),
+		appDir: '_app'
 	}
 }

@@ -51,13 +51,4 @@ jobs:
         id: preview-step
         with:
           source-dir: ./build/
-          comment: false
 
-      - name: Post PR comment with preview link
-        if: steps.preview-step.outputs.deployment-action == 'deploy'
-        uses: marocchino/sticky-pull-request-comment@v2
-        with:
-          header: pr-preview
-          message: |
-            [PR Preview Action](https://github.com/rossjrw/pr-preview-action) deployed! 🚀  
-            🔗 **Preview URL:** [${{ steps.preview-step.outputs.preview-url }}](${{ steps.preview-step.outputs.preview-url }})
