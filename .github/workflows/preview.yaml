@@ -38,9 +38,9 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
+
       - name: Install Dependencies
-        if: github.event.action != 'closed'
-        if: steps.cache-nodemodules.outputs.cache-hit != 'true'
+        if: github.event.action != 'closed' && steps.cache-nodemodules.outputs.cache-hit != 'true'
         run: pnpm install --frozen-lockfile
 
       - name: build

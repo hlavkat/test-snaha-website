@@ -185,7 +185,6 @@
 </section>
 <Divider --double-padding="0" />
 
-
 <style>
 	:global(.high) {
 		color: var(--colors-high) !important;
