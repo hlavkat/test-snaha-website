@@ -15,7 +15,7 @@ permissions:
   pull-requests: write
   pages: write
   id-token: write
-  commit: write
+  push: write
 
 jobs:
   deploy-preview:
