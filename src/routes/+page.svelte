@@ -184,16 +184,7 @@
 	</div>
 </section>
 <Divider --double-padding="0" />
-<footer>
-	<span>hello@snaha.net</span>
-	<a href="mailto:hello@snaha.net">Contact us</a>
-	<a href="https://github.com/snaha" target="_blank">Github</a>
-	<a href="/">Discord</a>
-	{#if !isMobile}
-		<div class="grower"></div>
-	{/if}
-	<Typography class="high end">{new Date().getFullYear()}</Typography>
-</footer>
+
 
 <style>
 	:global(.high) {
