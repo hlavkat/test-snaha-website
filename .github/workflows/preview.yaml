@@ -53,12 +53,11 @@ jobs:
           source-dir: ./build/
           comment: false
 
-      - uses: marocchino/sticky-pull-request-comment@v2
-        if: steps.preview-step.outputs.deployment-action == 'deploy' && env.deployment_status == 'success'
+      - name: Post PR comment with preview link
+        if: steps.preview-step.outputs.deployment-action == 'deploy'
+        uses: marocchino/sticky-pull-request-comment@v2
         with:
           header: pr-preview
           message: |
-            [PR Preview Action](https://github.com/rossjrw/pr-preview-action) ${{ steps.preview-step.outputs.action-version }}
-            :---:
-            | <p></p> :rocket: View preview at <br> ${{ steps.preview-step.outputs.preview-url }} <br><br>
-            | <h6>Built to branch [`${{ env.PREVIEW_BRANCH }}`](${{ github.server_url }}/${{ github.repository }}/tree/${{ env.PREVIEW_BRANCH }}) at ${{ steps.preview-step.outputs.action-start-time }}. <br> Preview will be ready when the [GitHub Pages deployment](${{ github.server_url }}/${{ github.repository }}/deployments) is complete. <br><br> </h6>
+            [PR Preview Action](https://github.com/rossjrw/pr-preview-action) deployed! 🚀  
+            🔗 **Preview URL:** [${{ steps.preview-step.outputs.preview-url }}](${{ steps.preview-step.outputs.preview-url }})
