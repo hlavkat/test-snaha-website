@@ -9,6 +9,8 @@ export default {
 			precompress: false,
 			strict: true
 		}),
-		appDir: '_app'
+		paths: {
+			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+		}
 	}
 }

@@ -51,4 +51,3 @@ jobs:
         id: preview-step
         with:
           source-dir: ./build/
-
