@@ -49,10 +49,13 @@ jobs:
       - name: List directories
         run: find build -type d -exec echo {} \;
 
+      - name: erase index.html
+        run: rm build/index.html
+
       - name: Generate Directory Listings
         uses: jayanta525/github-pages-directory-listing@v4.0.0
         with:
-          FOLDER: ./build      
+          FOLDER: ./build
 
       - name: Deploy PR preview
         uses: rossjrw/pr-preview-action@v1
