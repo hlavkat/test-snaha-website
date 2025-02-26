@@ -50,3 +50,4 @@ jobs:
         with:
           source-dir: build/
           action: auto
+          token: ${{ secrets.GITHUB_TOKEN }}
