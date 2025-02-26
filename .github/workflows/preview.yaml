@@ -46,9 +46,6 @@ jobs:
       - name: build
         run: pnpm build
 
-      - name: Create .nojekyll
-        run: touch build/.nojekyll
-
       - name: Deploy PR preview
         uses: rossjrw/pr-preview-action@v1
         with:
