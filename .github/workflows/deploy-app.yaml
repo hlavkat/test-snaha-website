@@ -45,6 +45,9 @@ jobs:
       - name: build
         run: pnpm build
 
+      - name: Disable Jekyll
+        run: touch ./build/.nojekyll
+
       - uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: ./build
