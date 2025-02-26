@@ -49,7 +49,7 @@ jobs:
       - name: Generate Directory Listings
         uses: jayanta525/github-pages-directory-listing@v4.0.0
         with:
-          FOLDER: ./build/data      #directory to generate index
+          FOLDER: ./build/      #directory to generate index
 
       - name: Deploy PR preview
         uses: rossjrw/pr-preview-action@v1
